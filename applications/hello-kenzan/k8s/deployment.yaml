@@ -7,11 +7,11 @@ metadata:
 spec:
   ports:
     - port: 80
-      targetPort: 8090
+      targetPort: 8888
   selector:
     app: hello-kenzan
     tier: hello-kenzan
-  type: NodePort
+  type: LoadBalancer
 
 ---
 apiVersion: extensions/v1beta1
